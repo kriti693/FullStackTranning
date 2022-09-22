@@ -1,4 +1,4 @@
-package String;
+package ClassProgram;
 
 import java.util.Scanner;
 
@@ -12,13 +12,13 @@ import java.util.Scanner;
 public final class ClassAssignment {
 	static Scanner sc = new Scanner(System.in);
 	public ClassAssignment(String str) {
-		 
+		 System.out.println("Hello this is my string");
 	}
 
 	/*
 	 * method is used to display a length of string
 	 */
-	public static int length() {
+	public static int llength() {
 		String str = sc.next();
 		int i = 0;
 		for (char c : str.toCharArray()) {
@@ -58,8 +58,8 @@ public final class ClassAssignment {
 	}
 	public static void main(String[] args) {
 		 ClassAssignment c=new ClassAssignment("Kritika");
-		
-		 System.out.println( c.length());
+		 int i= c.llength();
+		 System.out.println(i);
 	}
 
 }
